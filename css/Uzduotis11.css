@@ -1,0 +1,209 @@
+* {
+    /* outline: 0.5px solid red; */
+    box-sizing: border-box;
+}
+.menu_toggle {
+    display: none;
+}
+.checkbox_toggle {
+    display: none;
+}
+nav {
+    display: none;
+}
+.logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+.strap_logo {
+    color: rgb(0, 158, 158);
+    font-weight: normal;
+}
+.navig {
+    display: flex;
+    justify-content: space-between;
+}
+.custom_navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    width: 50%;
+}
+.home, .search {
+    font-size: 1.2rem;
+}
+.search {
+    transform: rotate(90deg);
+}
+header {
+    padding: 3vh 0;
+    border-bottom: solid 0.5px rgb(0, 158, 158);
+}
+section {
+    padding: 3vh 0;
+}
+.ale {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.login {
+    border-bottom: outset;
+    padding: 2vh 0vw 0.2vh 0vw;
+    font-weight: bold;
+    font-size: 4vh;
+}
+.sign, .email, .pass {
+    /* border: solid black 1px; */
+    border-top: none;
+    border-bottom: none;
+    padding: 1vh 0vw;
+}
+.log_fog {
+    /* border: solid black 1px; */
+    border-top: none;
+    padding: 0.5vh 0vw 3vh 0vw;
+}
+main {
+    padding: 4vh 0;
+    background-color: rgb(0, 158, 158);
+    color: white;
+    font-weight: bolder;
+}
+input {
+    width: 100%;
+}
+.inputs {
+    display: flex;
+}
+.email_input {
+    width: 85%;
+}
+.go_btn {
+    width: 15%;
+    background-color: rgb(0, 158, 158);
+}
+.get_app_today {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: 2vw 0vw 0vw 15vw; */
+}
+.get_btn {
+    background-color: rgb(0, 94, 94);
+    border-radius: 20px;
+    color: white;
+    border: none;
+    padding: 10px;
+}
+footer {
+    padding: 4vh 0;
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+.awesome {
+    font-size: 2.2em;
+}
+.features {
+    color: rgb(0, 94, 94)
+}
+.feat {
+    font-size: 0.95rem;
+}
+.slashas {
+    color: rgb(0, 94, 94)
+}
+.contact, .about, .newsletter {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.ragelis, .emailas, .adresas, .pasaka {
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+a {
+    color: rgb(0, 158, 158);
+    font-weight: 600;
+}
+.forgot {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+.btn_log {
+    background-color: rgb(0, 158, 158);
+    color: white;
+    border-radius: 2px;
+    border: none;
+    padding: 5px;
+}
+@media (max-width: 767px) {
+    .home, .pages, .features1, .shop, .elements, .mega, .search {
+        display: none;
+    }
+    header {
+        padding: 1vh 0;
+    }
+    .custom_navigation {
+        justify-content: flex-end;
+    }
+    .get_app_today {
+        justify-content: center;
+    }
+    .awfe {
+        text-align: center;
+        padding: 3vh 0;
+    }
+    .contact, .about, .newsletter {
+        padding: 0vh, 0;
+    }
+    nav {
+        right: -100%;
+        position: fixed;
+        top: 60px;
+        z-index: 1;
+        background-color: red;
+        width: 30%;
+        transition: all ease 0.6s;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 2px solid blue;
+    }
+    .menu_toggle {
+        display: block;
+    }
+    input[name="burgeris"]:checked ~ nav {
+        right: 0;
+    }
+    input[name="burgeris"] {
+        display: none;
+    }
+    input[name="burgeris"]:checked + .checkbox_toggle span:nth-child(2) {
+        transform: translateX(8px);
+    }
+    .checkbox_toggle {
+        display: block;
+        transition: all ease-in 1s;
+        /* border: solid 2px red; */
+        position: absolute;
+        right: 0;
+        background: black;
+        padding: 10px;
+        cursor: pointer;
+        top: 10px;
+        border-radius: 8px;
+    }
+    .checkbox_toggle span {
+        width: 30px;
+        height: 4px;
+        margin-bottom: 6px;
+        background-color: rgb(255, 255, 255);
+        display: block;
+        transition: all ease 0.3s;
+    }
+    .checkbox_toggle:hover span:nth-child(2) {
+        transform: translateX(8px);
+    }
+}
