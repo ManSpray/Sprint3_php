@@ -1,4 +1,3 @@
-/vendor
-composer.lock
-/css/bootstrap
-/css/fontawesome-free-5.14.0-web
+vendor
+css/bootstrap
+css/fontawesome-free-5.14.0-web

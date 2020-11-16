@@ -16,8 +16,8 @@ Debug::dump($page);
 // Debug::dump($customer->getCart());
 // Debug::dump($customer->getCart()->getCustomer());
 
-// $features = $entityManager->find('Models\Feature', 2);
-// Debug::dump($features);
+$contents = $entityManager->find('Models\Content', 2);
+Debug::dump($contents);
 
 
 print("</pre>");

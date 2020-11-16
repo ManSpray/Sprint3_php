@@ -19,6 +19,16 @@ class Page
      */
     protected $name = "ABC";
 
+    /**
+     * One page has many contents. This is the inverse side.
+     * @ORM\OneToMany(targetEntity="Content", mappedBy="product")
+     */
+    private $contents;
+
+    public function __construct() {
+        $this->contents = new ArrayCollection();
+    }
+
     public function getId()
     {
         return $this->id;
